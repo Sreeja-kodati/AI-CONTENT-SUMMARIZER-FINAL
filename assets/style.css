@@ -1,0 +1,155 @@
+/* AI Content Summarizer - Custom Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+    animation: gradientShift 8s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.main-header h1 {
+    color: #ffffff !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    margin: 0 !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.main-header p {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 1.05rem !important;
+    margin: 0.5rem 0 0 0 !important;
+}
+
+.metric-card {
+    background: linear-gradient(145deg, #1e1e2e, #2d2d44);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.metric-card-light {
+    background: linear-gradient(145deg, #f8f9ff, #eef1ff);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+}
+
+.summary-box {
+    background: rgba(102, 126, 234, 0.08);
+    border-left: 4px solid #667eea;
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    line-height: 1.7;
+}
+
+.tag-pill {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.footer-section {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(102, 126, 234, 0.2);
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.sidebar-brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px 8px 0 0;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.history-item {
+    background: rgba(102, 126, 234, 0.06);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(102, 126, 234, 0.15);
+}
+
+.ai-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #f093fb);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+[data-testid="stSidebar"] .sidebar-brand {
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
+}
+
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span {
+    color: #e0e0e0 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+.stDownloadButton > button:hover {
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+}
