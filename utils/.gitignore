@@ -1,4 +1,4 @@
 .env
 __pycache__/
 *.pyc
-.venv/
+.venv/git push origin --force --all
